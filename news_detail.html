@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
-    <meta name='apple-touch-fullscreen' content='yes'>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="IE=Edge，chrome=1" http-equiv="X-UA-Compatible">
+    <meta content='yes' name='apple-touch-fullscreen'>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
     <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <meta name="format-detection" content="telephone=no,email=no,address=no"/>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="icon" href="images/base/favicon.ico">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/fullpage.css">
-    <link rel="stylesheet" href="css/public.css">
-    <link rel="stylesheet" href="font/iconfont/iconfont.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>君都品牌-君铂雅酒店</title>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+    <meta content="webkit" name="renderer">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <link href="images/base/favicon.ico" rel="icon">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/fullpage.css" rel="stylesheet">
+    <link href="css/public.css" rel="stylesheet">
+    <link href="font/iconfont/iconfont.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>新闻资讯-酒店动态</title>
     <script src="js/rem.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/fullpage.js"></script>
@@ -32,7 +31,7 @@
     </div>
     <div class="logo">
         <h2>
-            <a href="index.html">君铂雅酒店</a>
+            <a href="index.html">新闻资讯-新闻详情</a>
         </h2>
     </div>
     <div class="tel">
@@ -109,27 +108,30 @@
         </li>
     </ul>
 </div>
-<div id="container" class="container jundu">
-    <div class="section">
+<div class="container news-detail" id="container">
+    <div class="section fp-auto-height">
         <div class="main">
-            <div class="swiper-container swiper-container-jundu">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"
-                         style="background: url(images/pinpai/jby_01_02.jpg) center center/cover no-repeat"></div>
-                    <div class="swiper-slide"
-                         style="background: url(images/pinpai/jby_02_02.jpg) center center/cover no-repeat"></div>
-                    <div class="swiper-slide"
-                         style="background: url(images/pinpai/jby_03_02.jpg) center center/cover no-repeat"></div>
+            <div class="news-detail-container">
+                <div class="tilte">「徒步旅行」与君都一起健康生活 快乐工作</div>
+                <div class="time">2017-03-25</div>
+                <div class="con">
+                    <p>
+                        2017年3月12日~13日，长沙君都酒店集团的小伙伴们在集团领导的带领下来到了美丽的西洞庭湿地公园进行了为期两天的徒步体验活动，此次活动旨在锻炼团队意志、促进团队的交流合作、锻炼团队凝聚力，使君都团队能飞得更高、走得更远。</p>
+                    <img alt="" src="images/others/640.jpg">
+                    <p>在坡头镇指定地点集合：宣讲活动规则及注意事项、抽签分组、分发矿泉水和压缩饼干、陈董动员讲话、授予队旗等</p>
                 </div>
-                <div class="swiper-pagination"></div>
+            </div>
+            <div class="news_fy">
+                <a href="">上一篇：「徒步旅行」与君都一起健康生活 快乐工作</a>
+                <a href="">下一篇：与君都一起健康与君都一起健康生活与君都一起健康生活与君都一起健康生活生活 快乐工作</a>
             </div>
         </div>
     </div>
-    <div class="section footer fp-auto-height">
+    <div class="section fp-auto-height footer">
         <div class="wechat">
             <i class="iconfont">&#xe6a6;</i>
             <div class="wechat_code">
-                <img src="images/base/wechat_code.jpg" alt="">
+                <img alt="" src="images/base/wechat_code.jpg">
                 <p>长按保存至手机，打开微信扫一扫</p>
             </div>
         </div>
@@ -145,22 +147,4 @@
 
 </body>
 </html>
-<script src="js/swiper.min.js"></script>
 <script src="js/public.js"></script>
-<script>
-    $(function () {
-        $('#container').fullpage({
-            scrollingSpeed: 800,
-        });
-        var bannerSwiper = new Swiper(".swiper-container-jundu", {
-            speed: 800,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-            },
-            pagination: {
-                el: ".swiper-pagination"
-            }
-        })
-    })
-</script>

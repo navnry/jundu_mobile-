@@ -1,3 +1,22 @@
+@charset "UTF-8";
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .section .main {
     display: flex;
@@ -322,7 +341,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .5);
     position: absolute;
     top: 0;
     left: 0;
@@ -472,6 +491,7 @@
 
 .container.vip .main > div {
     text-align: center;
+    width: 100%;
 }
 
 .container.vip .main h3 {
@@ -702,4 +722,618 @@
     line-height: .24rem;
     color: #333333;
     padding: .04rem 0;
+}
+
+.container.news {
+    margin-top: .95rem;
+}
+
+.container.news .main {
+    display: block;
+    text-align: center;
+    padding: 0 .2rem;
+}
+
+.container.news .news-nav {
+    width: 6.13rem;
+    margin: auto;
+    text-align: center;
+    border-radius: .05rem;
+    overflow: hidden;
+}
+
+.container.news .news-nav ul {
+    width: 6.15rem;
+    display: inline-block;
+    margin: .4rem 0;
+}
+
+.container.news .news-nav ul li {
+    width: 2.03rem;
+    height: .6rem;
+    float: left;
+    background: #999999;
+    margin-right: .02rem;
+    text-align: center;
+}
+
+.container.news .news-nav ul li.on {
+    background: #bd9466;
+}
+
+.container.news .news-nav ul li a {
+    font-size: .3rem;
+    color: #fdfdfd;
+    line-height: .6rem;
+}
+
+.container.news .news-container {
+
+}
+
+.container.news .news-container ul li:after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.container.news .news-container ul li {
+    padding: .35rem .05rem;
+    border-bottom: solid 1px #cccccc;
+}
+
+.container.news .news-container ul li .pic {
+    width: 2.56rem;
+    height: 1.61rem;
+    float: left;
+}
+
+.container.news .news-container ul li .con {
+    width: 4.44rem;
+    text-align: left;
+    padding-left: .2rem;
+    padding-top: .1rem;
+    float: left;
+}
+
+.container.news .news-container ul li .con h6 {
+    font-size: .3rem;
+    line-height: .32rem;
+    color: #333333;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container.news .news-container ul li .con span {
+    font-size: .18rem;
+    color: #999999;
+    display: block;
+    padding: .15rem 0;
+}
+
+.container.news .news-container ul li .con p {
+    font-size: .2rem;
+    line-height: .3rem;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.container.news .load-more {
+    line-height: 1.16rem;
+    position: relative;
+}
+
+.container.news .load-more a {
+    font-size: .24rem;
+    color: #666666;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: .2rem;
+}
+
+.container.news .load-more img {
+    width: .26rem;
+    height: .26rem;
+    vertical-align: middle;
+    position: absolute;
+    left: -2rem;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.container.news .load-more img.rotate {
+    -webkit-animation: rotate 1s linear 1s 5 alternate;
+    animation: rotate 1s linear infinite;
+}
+
+.container.news-detail {
+    margin-top: .95rem;
+}
+
+.container.news-detail .main {
+    display: block;
+    padding: 0 .2rem;
+}
+
+.container.news-detail .news-detail-container {
+    padding: .6rem 0 .3rem 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.container.news-detail .tilte {
+    font-size: .3rem;
+    color: #333333;
+    text-align: center;
+}
+
+.container.news-detail .time {
+    font-size: .2rem;
+    color: #999999;
+    text-align: center;
+}
+
+.container.news-detail .con {
+    padding: .2rem 0;
+}
+
+.container.news-detail .con p {
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #666666;
+    text-indent: .48rem;
+}
+
+.container.news-detail .con img {
+    padding: .2rem 0;
+}
+
+.news_fy {
+    padding: .2rem 0;
+}
+
+.news_fy a {
+    font-size: .26rem;
+    color: #666666;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: .4rem;
+}
+
+.container.caigou {
+    padding-top: .95rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+.container.caigou .section {
+    width: 100%;
+    height: 100%;
+}
+
+.container.caigou .main {
+    display: block;
+    position: relative;
+}
+
+.container.caigou .caigou-nav {
+    width: 1.96rem;
+    height: 100%;
+    position: absolute;
+    padding-top: .4rem;
+}
+
+.container.caigou .caigou-nav ul {
+    width: 1.92rem;
+    height: 100%;
+    float: right;
+    background: #eeeeee;
+    padding: .36rem 0;
+}
+
+.container.caigou .caigou-nav ul li {
+    padding-left: .21rem;
+    position: relative;
+}
+
+.container.caigou .caigou-nav ul li a {
+    font-size: .3rem;
+    color: #666666;
+    line-height: .75rem;
+    display: block;
+}
+
+.container.caigou .caigou-nav ul li.on {
+    background: #ffffff;
+}
+
+.container.caigou .caigou-nav ul li.on:before {
+    content: '';
+    display: block;
+    width: .03rem;
+    height: .3rem;
+    background: #bd9466;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.container.caigou .caigou-nav ul li.on a {
+    color: #bd9466;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container.caigou .caigou-container {
+    width: 4.3rem;
+    height: calc(100% - .4rem);
+    overflow: auto;
+    position: absolute;
+    top: .4rem;
+    right: .7rem;
+}
+
+.container.caigou .caigou-container::-webkit-scrollbar {
+    display: none;
+}
+
+.container.caigou .dialog {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.container.caigou .dialog .form_c {
+    width: 5.59rem;
+    height: 4.36rem;
+    background-color: #ffffff;
+    border-radius: .05rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: .16rem .19rem;
+}
+
+.container.caigou .dialog .form_c i {
+    float: right;
+    font-size: .3rem;
+    color: #999999;
+}
+
+.container.caigou .dialog .form_c form {
+    text-align: center;
+    float: right;
+    padding-top: .3rem;
+    padding-right: .16rem;
+}
+
+.container.caigou .dialog .form_c form > div {
+    margin-bottom: .2rem;
+    font-size: .24rem;
+    line-height: .6rem;
+    color: #333333;
+}
+
+.container.caigou .dialog .form_c form input[type=text] {
+    width: 3.67rem;
+    height: .59rem;
+    border-radius: 2px;
+    border: solid 1px #cccccc;
+    font-size: .24rem;
+    color: #333333;
+    padding: 0 .1rem;
+}
+
+.container.caigou .dialog .form_c form input[type=submit] {
+    width: 4.59rem;
+    height: .60rem;
+    margin: .2rem auto 0 auto;
+    background-color: #bd9466;
+    border-radius: .3rem;
+    font-size: .3rem;
+    color: #ffffff;
+}
+
+.container.caigou .caigou-container .pic {
+    width: 4.3rem;
+    height: 4.3rem;
+}
+
+.container.caigou .caigou-container ul {
+    padding-bottom: .6rem;
+}
+
+.container.caigou .caigou-container ul li {
+    padding: .3rem 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.container.caigou .caigou-container ul li:first-child {
+    padding-top: 0;
+}
+
+.container.caigou .caigou-container .con .name {
+    font-size: .3rem;
+    line-height: .3rem;
+    color: #333333;
+    padding: .26rem 0 .2rem 0;
+}
+
+.container.caigou .caigou-container .con .guige {
+    font-size: .24rem;
+    color: #333333;
+}
+
+.container.caigou .caigou-container .con p {
+    font-size: .24rem;
+    color: #666666;
+    line-height: .36rem;
+}
+
+.container.caigou .caigou-container .con b {
+    font-size: .24rem;
+    color: #333333;
+    font-weight: normal;
+}
+
+.container.caigou .caigou-container .con a {
+    display: block;
+    width: 2.60rem;
+    height: .69rem;
+    background-color: #bd9466;
+    border-radius: .03rem;
+    text-align: center;
+    line-height: .69rem;
+    font-size: .3rem;
+    color: #fdfdfd;
+    margin-top: .2rem;
+}
+
+.container.zhaoshang {
+
+}
+
+.container.zhaoshang .main {
+    display: block;
+    text-align: center;
+}
+
+.container.zhaoshang h3 {
+    font-size: .48rem;
+    color: #fdfdfd;
+    font-weight: normal;
+    padding-top: 1.5rem;
+}
+
+.container.zhaoshang .swiper-container-zhaoshang {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+.container.zhaoshang .swiper-container-zhaoshang .swiper-pagination {
+
+}
+
+.container.zhaoshang .swiper-slide {
+    width: 2.87rem;
+    padding: .8rem .5rem;
+}
+
+.container.zhaoshang .swiper-slide .pic {
+    width: .51rem;
+    height: .55rem;
+    margin: auto;
+}
+
+.container.zhaoshang .swiper-slide p {
+    font-size: .3rem;
+    line-height: .3rem;
+    color: #fdfdfd;
+    padding-top: .3rem;
+}
+
+.container.zhaoshang .swiper-slide span {
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #eeeeee;
+    display: block;
+    padding-top: .2rem;
+}
+
+.container.zhaoshang .box.biaozhun ul li {
+    height: 1.3rem;
+    text-align: left;
+    padding: 0 .5rem;
+}
+
+.container.zhaoshang .box.biaozhun ul li:after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.container.zhaoshang .box.biaozhun ul li .num {
+    font-family: Algerian, sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #ffffff;
+    float: left;
+}
+
+.container.zhaoshang .box.biaozhun ul li .con {
+    width: 5rem;
+    float: left;
+    padding-top: .32rem;
+    padding-left: .3rem;
+}
+
+.container.zhaoshang .box.biaozhun ul li .con p {
+    font-size: .24rem;
+    color: #fdfdfd;
+}
+
+.container.zhaoshang .box.biaozhun ul li .con p b {
+    font-size: .24rem;
+    font-weight: normal;
+    color: #f9d405;
+}
+
+.container.zhaoshang .box.liucheng {
+    padding: 2rem .75rem 0 .75rem;
+}
+
+/*.container.zhaoshang .box.liucheng{*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*}*/
+.container.zhaoshang .box.huibao {
+    padding: .4rem .2rem 0 .2rem;
+}
+
+.container.zhaoshang .box.huibao table tbody td {
+    font-size: .2rem;
+    color: #ffffff;
+}
+
+.container.zhaoshang .box.huibao table thead {
+    background: rgba(54, 53, 54, .8);
+}
+
+.container.zhaoshang .box.huibao table thead tr th {
+    font-size: .3rem;
+    color: #fdfdfd;
+    height: .65rem;
+    font-weight: normal;
+    border: 1px solid rgba(92, 91, 93, .5);
+}
+
+.container.zhaoshang .box.huibao table thead tr th b {
+    font-size: .2rem;
+    color: #fdfdfd;
+    font-weight: normal;
+}
+
+.container.zhaoshang .box.huibao table tbody tr:nth-child(odd) {
+    background: rgba(113, 111, 110, .6);
+    height: .8rem;
+}
+
+.container.zhaoshang .box.huibao table tbody tr:nth-child(even) {
+    background: rgba(54, 53, 54, .6);
+    height: .8rem;
+}
+
+.container.zhaoshang .box.biaoge {
+    padding: .8rem .2rem 0 .2rem;
+}
+
+.container.zhaoshang .box.biaoge form {
+    border-bottom: dashed #cccccc .02rem;
+    padding-right: .4rem;
+    padding-bottom: .5rem;
+}
+
+.container.zhaoshang .box.biaoge form > div {
+    height: .61rem;
+    line-height: .61rem;
+    margin-bottom: .37rem;
+    font-size: .3rem;
+    color: #fdfdfd;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.container.zhaoshang .box.biaoge form input[type=text] {
+    width: 4.81rem;
+    height: .61rem;
+    border-radius: .02rem;
+    border: solid 1px #ccc;
+    background: rgba(255, 255, 255, .3);
+    color: #fdfdfd;
+    padding: 0 .1rem;
+    font-size: .18rem;
+    float: right;
+}
+
+.container.zhaoshang .box.biaoge form input[type=submit] {
+    width: 4.86rem;
+    height: .62rem;
+    background-color: #bd9466;
+    border-radius: .31rem;
+    font-size: .3rem;
+    color: #fdfdfd;
+}
+
+.container.zhaoshang .box.biaoge .bottom {
+    padding-top: .8rem;
+}
+
+.container.zhaoshang .box.biaoge .download {
+    font-size: .24rem;
+    color: #ffffff;
+}
+
+.container.zhaoshang .box.biaoge .download a {
+    font-size: .24rem;
+    color: #ffffff;
+}
+
+.container.zhaoshang .box.biaoge .download-btn {
+    width: 2.57rem;
+    height: .72rem;
+    margin: .4rem auto;
+    text-align: center;
+    background-color: #f9d405;
+    box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.24),
+    inset 0 5px 5px 0 rgba(0, 0, 0, 0.14);
+    border-radius: .05rem;
+}
+
+.container.zhaoshang .box.biaoge .download-btn a {
+    font-size: .36rem;
+    color: #333333;
+    line-height: .72rem;
+}
+
+.container.zhaoshang .box.biaoge .tel span {
+    display: block;
+    font-size: .3rem;
+    color: #ffffff;
+    padding-bottom: .2rem;
+}
+
+.container.zhaoshang .box.biaoge .tel p {
+    font-size: .3rem;
+    color: #ffffff;
+}
+
+.container.zhaoshang .box.biaoge .tel p a {
+    font-size: .4rem;
+    color: #ffffff;
+    font-weight: normal;
 }

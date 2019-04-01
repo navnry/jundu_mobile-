@@ -1,10 +1,14 @@
+@charset "UTF-8";
+
 * {
     box-sizing: border-box;
     font-size: 0;
 }
 
 html, body {
-
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
 }
 
 @font-face {
@@ -33,6 +37,14 @@ html, body {
     font-family: "lixuke";
     src: url("../font/lixuke/lixuke.eot"); /* IE9 */
     src: url("../font/lixuke/lixuke.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../font/lixuke/lixuke.woff") format("woff"), /* chrome、firefox */ url("../font/lixuke/lixuke.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */ url("../font/lixuke/lixuke.svg#lixuke") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Algerian";
+    src: url("../font/Algerian/Algerian.eot"); /* IE9 */
+    src: url("../font/Algerian/Algerian.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../font/Algerian/Algerian.woff") format("woff"), /* chrome、firefox */ url("../font/Algerian/Algerian.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */ url("../font/Algerian/Algerian.svg#Algerian") format("svg"); /* iOS 4.1- */
     font-style: normal;
     font-weight: normal;
 }
@@ -111,8 +123,10 @@ html, body {
 
 .header h2 a {
     font-size: .42rem;
+    display: inline-block;
     color: #333333;
     font-weight: normal;
+    vertical-align: middle;
 }
 
 .header .tel {
@@ -202,9 +216,11 @@ html, body {
     padding-left: .3rem;
     font-family: webfont, sans-serif;
 }
-.sub_menu li.on a{
+
+.sub_menu li.on a {
     color: #bd9466;
 }
+
 .footer {
     width: 100%;
     border-top: 1px solid #999999;
@@ -278,4 +294,20 @@ html, body {
     line-height: .34rem;
     color: #666666;
     font-family: webfont, sans-serif;
+}
+
+.swiper-container.swiper-container-jundu .swiper-pagination {
+    bottom: .3rem;
+}
+
+.swiper-container.swiper-container-jundu .swiper-pagination .swiper-pagination-bullet {
+    width: .26rem;
+    height: .26rem;
+    border: .02rem solid #ffffff;
+    opacity: 1;
+    background: #ffffff;
+}
+
+.swiper-container.swiper-container-jundu .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #bd9466;
 }

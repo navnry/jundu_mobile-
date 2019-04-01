@@ -1,0 +1,84 @@
+{
+  "list": [
+    {
+      "img": "http://192.168.1.161/jundu_m/images/others/news.png",
+      "alt": "1",
+      "title": "这是title这是title这是title这是title这是title这是title这是title这是title这是title这是title这是title这是title这是title这是title",
+      "url": "http://192.168.1.161/jundu_m/news_detail.html",
+      "desc": "摘要",
+      "time": "2018-12-28"
+    },
+    {
+      "img": "http://192.168.1.161/jundu_m/images/others/news.png",
+      "alt": "1",
+      "title": "这是title",
+      "url": "http://192.168.1.161/jundu_m/news_detail.html",
+      "desc": "摘要",
+      "time": "2018-12-28"
+    },
+    {
+      "img": "http://192.168.1.161/jundu_m/images/others/news.png",
+      "alt": "1",
+      "title": "这是title",
+      "url": "http://192.168.1.161/jundu_m/news_detail.html",
+      "desc": "摘要",
+      "time": "2018-12-28"
+    },
+    {
+      "img": "http://192.168.1.161/jundu_m/images/others/news.png",
+      "alt": "1",
+      "title": "这是title",
+      "url": "http://192.168.1.161/jundu_m/news_detail.html",
+      "desc": "摘要",
+      "time": "2018-12-28"
+    },
+    {
+      "img": "http://192.168.1.161/jundu_m/images/others/news.png",
+      "alt": "1",
+      "title": "这是title",
+      "url": "http://192.168.1.161/jundu_m/news_detail.html",
+      "desc": "摘要",
+      "time": "2018-12-28"
+    },
+    {
+      "img": "http://192.168.1.161/jundu_m/images/others/news.png",
+      "alt": "1",
+      "title": "这是title",
+      "url": "http://192.168.1.161/jundu_m/news_detail.html",
+      "desc": "这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要",
+      "time": "2018-12-28"
+    },
+    {
+      "img": "http://192.168.1.161/jundu_m/images/others/news.png",
+      "alt": "1",
+      "title": "这是title",
+      "url": "http://192.168.1.161/jundu_m/news_detail.html",
+      "desc": "摘要",
+      "time": "2018-12-28"
+    },
+    {
+      "img": "http://192.168.1.161/jundu_m/images/others/news.png",
+      "alt": "1",
+      "title": "这是title",
+      "url": "http://192.168.1.161/jundu_m/news_detail.html",
+      "desc": "摘要",
+      "time": "2018-12-28"
+    },
+    {
+      "img": "http://192.168.1.161/jundu_m/images/others/news.png",
+      "alt": "1",
+      "title": "这是title",
+      "url": "http://192.168.1.161/jundu_m/news_detail.html",
+      "desc": "摘要",
+      "time": "2018-12-28"
+    },
+    {
+      "img": "http://192.168.1.161/jundu_m/images/others/news.png",
+      "alt": "1",
+      "title": "这是title",
+      "url": "http://192.168.1.161/jundu_m/news_detail.html",
+      "desc": "摘要",
+      "time": "2018-12-28"
+    }
+  ]
+}
