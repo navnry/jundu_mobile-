@@ -161,48 +161,48 @@
 </html>
 <script src="js/public.js"></script>
 <script>
-    function getData(offset, size) {
-        $.ajax({
-            type: 'GET',
-            url: 'data/newsData.json',
-            dataType: 'json',
-            success: function (res) {
-                var data = res.list;
-                // console.log(data);
-                var sum = res.list.length;
-                if (sum - offset < size) {
-                    size = sum - offset;
-                }
-                var result = '';
-                for (var i = offset; i < (offset + size); i++) {
-                    result += '<li>';
-                    result += '<a href="' + data[i].url + '">';
-                    result += '<div class="pic">';
-                    result += '<img src="' + data[i].img + '"' + ' alt="' + data[i].alt + '">';
-                    result += '</div>';
-                    result += '<div class="con">';
-                    result += '<h6>' + data[i].title + '</h6>';
-                    result += '<span>' + data[i].time + '</span>';
-                    result += '<p>' + data[i].desc + '</p>';
-                    result += '</div>';
-                    result += '</a>';
-                    result += '</li>';
-                }
-                $('.news-container ul').append(result);
-                if ((offset + size) >= sum) {
-                    $(".load-more a").html("已加载完全部");
-                } else {
-                    $(".load-more a").html("加载更多");
-                }
-            },
-            error: function (xhr, type) {
-                alert('获取数据失败!');
-            }
-        });
-    }
-</script>
-<script>
     $(function () {
+        function getData(offset, size) {
+            $.ajax({
+                type: 'GET',
+                url: '../jundu_m/data/newsData.json',
+                dataType: 'json',
+                success: function (res) {
+                    var data = res.list;
+                    // console.log(data);
+                    var sum = res.list.length;
+                    if (sum - offset < size) {
+                        size = sum - offset;
+                    }
+                    var result = '';
+                    for (var i = offset; i < (offset + size); i++) {
+                        result += '<li>';
+                        result += '<a href="' + data[i].url + '">';
+                        result += '<div class="pic">';
+                        result += '<img src="' + data[i].img + '"' + ' alt="' + data[i].alt + '">';
+                        result += '</div>';
+                        result += '<div class="con">';
+                        result += '<h6>' + data[i].title + '</h6>';
+                        result += '<span>' + data[i].time + '</span>';
+                        result += '<p>' + data[i].desc + '</p>';
+                        result += '</div>';
+                        result += '</a>';
+                        result += '</li>';
+                    }
+                    $('.news-container ul').append(result);
+                    if ((offset + size) >= sum) {
+                        $(".load-more a").html("已加载完全部");
+                    } else {
+                        $(".load-more a").html("加载更多");
+                    }
+                },
+                error: function (xhr, type) {
+                    alert('获取数据失败!');
+                }
+            });
+
+        }
+
         var counter = 0;
         var pageStart = 0;
         var pageSize = 3;
@@ -215,7 +215,7 @@
             setTimeout(function () {
                 getData(pageStart, pageSize);
                 $(".load-more img").removeClass("rotate")
-            }, 1000)
+            }, 300)
         });
     })
 </script>
